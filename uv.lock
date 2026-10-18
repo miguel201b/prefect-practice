@@ -1295,11 +1295,15 @@ name = "prefect-practice"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "httpx" },
     { name = "prefect" },
 ]
 
 [package.metadata]
-requires-dist = [{ name = "prefect", specifier = ">=3.8.8" }]
+requires-dist = [
+    { name = "httpx", specifier = ">=0.28.1" },
+    { name = "prefect", specifier = ">=3.8.8" },
+]
 
 [[package]]
 name = "prometheus-client"
